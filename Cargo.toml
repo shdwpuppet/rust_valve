@@ -1,8 +1,7 @@
 [package]
-name = "rust_valve"
+name = "source_rcon"
 version = "0.1.0"
 authors = ["Alex Williams <shdw.puppet@gmail.com>"]
 edition = "2018"
 
 [dependencies]
-tokio = "0.1"

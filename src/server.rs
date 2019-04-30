@@ -18,8 +18,7 @@ pub struct Info {
 impl Server {
 
 
-
-    fn new(ip: Ipv4Addr, port:u16, rcon_pass:String) -> Result<Server, Error> {
+    pub fn new(ip: Ipv4Addr, port:u16, rcon_pass:String) -> Result<Server, Error> {
 
 
         let socket = SocketAddr::V4(SocketAddrV4::new(ip, port));
@@ -28,7 +27,7 @@ impl Server {
             Ok(c) => {
                 c
             }
-            Err(E) => {
+            Err(e) => {
                 return Err(e)
             }
         };
