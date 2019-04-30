@@ -5,3 +5,4 @@ authors = ["Alex Williams <shdw.puppet@gmail.com>"]
 edition = "2018"
 
 [dependencies]
+tokio = "0.1"
